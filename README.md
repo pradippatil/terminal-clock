@@ -1,4 +1,4 @@
-# Termical clock using Go
+# Terminal clock using Go
 
 
 ![demo](clock.gif)

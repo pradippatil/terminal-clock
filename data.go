@@ -2,7 +2,8 @@ package main
 
 import termbox "github.com/nsf/termbox-go"
 
-// digits generated using: http://patorjk.com/software/taag/#p=display&v=0&f=Electronic&t=0%0A
+// Digits generated using: http://patorjk.com/software/taag/#p=display&v=0&f=Electronic&t=0%0A
+// Also can be copied from unicode chart from: http://jrgraphix.net/r/Unicode
 
 type Theme struct {
 	name     string
@@ -17,7 +18,7 @@ var electronics = Theme{
 	"Electronics",
 	15,
 	12,
-	termbox.ColorYellow,
+	termbox.ColorRed,
 	termbox.ColorDefault,
 	map[string]string{
 
@@ -203,7 +204,7 @@ var ansi = Theme{
 	"Ansi",
 	9,
 	6,
-	termbox.ColorYellow,
+	termbox.ColorRed,
 	termbox.ColorDefault,
 	map[string]string{
 		"0": `

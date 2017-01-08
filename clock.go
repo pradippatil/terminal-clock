@@ -23,10 +23,10 @@ func draw(midW, midH, w int, frame string) {
 
 func drawBox(x, y, w, h int, fg, bg termbox.Attribute) {
 	// unicode box drawing chars around clock
-	termbox.SetCell(x, y, '┌', fg, bg)
-	termbox.SetCell(x, y+h, '└', fg, bg)
-	termbox.SetCell(x+w, y, '┐', fg, bg)
-	termbox.SetCell(x+w, y+h, '┘', fg, bg)
+	termbox.SetCell(x, y, '┏', fg, bg)
+	termbox.SetCell(x, y+h, '┗', fg, bg)
+	termbox.SetCell(x+w, y, '┓', fg, bg)
+	termbox.SetCell(x+w, y+h, '┛', fg, bg)
 	fill(x+1, y, w-1, 1, termbox.Cell{Ch: '─', Fg: fg, Bg: bg})
 	fill(x+1, y+h, w-1, 1, termbox.Cell{Ch: '─', Fg: fg, Bg: bg})
 	fill(x, y+1, 1, h-1, termbox.Cell{Ch: '│', Fg: fg, Bg: bg})
