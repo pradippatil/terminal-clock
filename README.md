@@ -1,4 +1,5 @@
 # Terminal clock using Go
+An experiment to explore `Go` for text-based interfaces using `github.com/nsf/termbox-go`
 
 
 ![demo](clock.gif)
